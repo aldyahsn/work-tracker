@@ -73,6 +73,16 @@ function timer() {
     document.getElementById("sec").innerHTML = secOut;
     document.getElementById("min").innerHTML = minOut;
     document.getElementById("hour").innerHTML = hourOut;
+    console.log(min);
+    if(min>=1){ 
+        document.getElementById("min").classList.remove("d-none");
+        document.getElementById("min-word").classList.remove("d-none");
+    }
+    if(hour>=1){ 
+        document.getElementById("hour").classList.remove("d-none");
+        document.getElementById("hour").classList.remove("d-none");
+    }
+        
 
 }
 
@@ -88,10 +98,6 @@ function checkTime(i) {
 }
 
 function reset() {
-
-
-    /*Reset*/
-
     milisec = 0;
     sec = 0;
     min = 0
